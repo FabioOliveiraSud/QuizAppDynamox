@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (5.7.1)
+  - CombineExt (1.8.0)
+  - Nimble (10.0.0)
+  - Quick (5.0.1)
+  - Realm (10.54.5):
+    - Realm/Headers (= 10.54.5)
+  - Realm/Headers (10.54.5)
+  - RealmSwift (10.54.5):
+    - Realm (= 10.54.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.6)
+  - CombineExt (~> 1.0)
+  - Nimble (~> 10.0)
+  - Quick (~> 5.0)
+  - RealmSwift (~> 10.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CombineExt
+    - Nimble
+    - Quick
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  CombineExt: c4daa97ef75754d8ef319bd79edeef82652f3eea
+  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
+  Quick: 749aa754fd1e7d984f2000fe051e18a3a9809179
+  Realm: ac6ab7d43b76db2bdb48bbd097019bb621d860b8
+  RealmSwift: 7c258367cc498594aa989b7d9620989a276ad7f4
+
+PODFILE CHECKSUM: 8f96d2adc8d11b72a648988ac71bc53a4623043e
+
+COCOAPODS: 1.16.2

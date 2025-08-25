@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F243ED073EC17F389CA9826 /* Pods_QuizAppDynamox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C47E2F621FFACF0EB8049B /* Pods_QuizAppDynamox.framework */; };
+		96973027AB1FF024224A9C84 /* Pods_QuizAppDynamox_QuizAppDynamoxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B7954A88A4A5DCAC044319C /* Pods_QuizAppDynamox_QuizAppDynamoxUITests.framework */; };
+		C2F9A39203F43E9B506CD34D /* Pods_QuizAppDynamoxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F101018C4A00858AF4C338 /* Pods_QuizAppDynamoxTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACA4B94C2E5D28F500BEA47D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACA4B9362E5D28F300BEA47D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA4B93D2E5D28F300BEA47D;
+			remoteInfo = QuizAppDynamox;
+		};
+		ACA4B9562E5D28F500BEA47D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACA4B9362E5D28F300BEA47D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA4B93D2E5D28F300BEA47D;
+			remoteInfo = QuizAppDynamox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30B08403FE384224F92B29E7 /* Pods-QuizAppDynamoxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizAppDynamoxTests.debug.xcconfig"; path = "Target Support Files/Pods-QuizAppDynamoxTests/Pods-QuizAppDynamoxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E963B702852D18D064F1FDE /* Pods-QuizAppDynamoxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizAppDynamoxTests.release.xcconfig"; path = "Target Support Files/Pods-QuizAppDynamoxTests/Pods-QuizAppDynamoxTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B7954A88A4A5DCAC044319C /* Pods_QuizAppDynamox_QuizAppDynamoxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizAppDynamox_QuizAppDynamoxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F101018C4A00858AF4C338 /* Pods_QuizAppDynamoxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizAppDynamoxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A35FC83A6E817A2A1520C7DF /* Pods-QuizAppDynamox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizAppDynamox.debug.xcconfig"; path = "Target Support Files/Pods-QuizAppDynamox/Pods-QuizAppDynamox.debug.xcconfig"; sourceTree = "<group>"; };
+		A4C47E2F621FFACF0EB8049B /* Pods_QuizAppDynamox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuizAppDynamox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA4B93E2E5D28F300BEA47D /* QuizAppDynamox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizAppDynamox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA4B94B2E5D28F500BEA47D /* QuizAppDynamoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizAppDynamoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA4B9552E5D28F500BEA47D /* QuizAppDynamoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizAppDynamoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81E70A6B03CA14E5C5DD5BE /* Pods-QuizAppDynamox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizAppDynamox.release.xcconfig"; path = "Target Support Files/Pods-QuizAppDynamox/Pods-QuizAppDynamox.release.xcconfig"; sourceTree = "<group>"; };
+		C5550C40200E43DC8426F5A9 /* Pods-QuizAppDynamox-QuizAppDynamoxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizAppDynamox-QuizAppDynamoxUITests.debug.xcconfig"; path = "Target Support Files/Pods-QuizAppDynamox-QuizAppDynamoxUITests/Pods-QuizAppDynamox-QuizAppDynamoxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C91B18F968CCA4489317E828 /* Pods-QuizAppDynamox-QuizAppDynamoxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuizAppDynamox-QuizAppDynamoxUITests.release.xcconfig"; path = "Target Support Files/Pods-QuizAppDynamox-QuizAppDynamoxUITests/Pods-QuizAppDynamox-QuizAppDynamoxUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		ACA4B9402E5D28F300BEA47D /* QuizAppDynamox */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = QuizAppDynamox;
+			sourceTree = "<group>";
+		};
+		ACA4B94E2E5D28F500BEA47D /* QuizAppDynamoxTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = QuizAppDynamoxTests;
+			sourceTree = "<group>";
+		};
+		ACA4B9582E5D28F500BEA47D /* QuizAppDynamoxUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = QuizAppDynamoxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACA4B93B2E5D28F300BEA47D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F243ED073EC17F389CA9826 /* Pods_QuizAppDynamox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4B9482E5D28F500BEA47D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2F9A39203F43E9B506CD34D /* Pods_QuizAppDynamoxTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4B9522E5D28F500BEA47D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96973027AB1FF024224A9C84 /* Pods_QuizAppDynamox_QuizAppDynamoxUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41C2EFEE4B65AEDAF18F7161 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4C47E2F621FFACF0EB8049B /* Pods_QuizAppDynamox.framework */,
+				4B7954A88A4A5DCAC044319C /* Pods_QuizAppDynamox_QuizAppDynamoxUITests.framework */,
+				91F101018C4A00858AF4C338 /* Pods_QuizAppDynamoxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACA4B9352E5D28F300BEA47D = {
+			isa = PBXGroup;
+			children = (
+				ACA4B9402E5D28F300BEA47D /* QuizAppDynamox */,
+				ACA4B94E2E5D28F500BEA47D /* QuizAppDynamoxTests */,
+				ACA4B9582E5D28F500BEA47D /* QuizAppDynamoxUITests */,
+				ACA4B93F2E5D28F300BEA47D /* Products */,
+				C36417FBA96FE88B7EFB918B /* Pods */,
+				41C2EFEE4B65AEDAF18F7161 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ACA4B93F2E5D28F300BEA47D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4B93E2E5D28F300BEA47D /* QuizAppDynamox.app */,
+				ACA4B94B2E5D28F500BEA47D /* QuizAppDynamoxTests.xctest */,
+				ACA4B9552E5D28F500BEA47D /* QuizAppDynamoxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C36417FBA96FE88B7EFB918B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A35FC83A6E817A2A1520C7DF /* Pods-QuizAppDynamox.debug.xcconfig */,
+				B81E70A6B03CA14E5C5DD5BE /* Pods-QuizAppDynamox.release.xcconfig */,
+				C5550C40200E43DC8426F5A9 /* Pods-QuizAppDynamox-QuizAppDynamoxUITests.debug.xcconfig */,
+				C91B18F968CCA4489317E828 /* Pods-QuizAppDynamox-QuizAppDynamoxUITests.release.xcconfig */,
+				30B08403FE384224F92B29E7 /* Pods-QuizAppDynamoxTests.debug.xcconfig */,
+				3E963B702852D18D064F1FDE /* Pods-QuizAppDynamoxTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACA4B93D2E5D28F300BEA47D /* QuizAppDynamox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA4B95F2E5D28F500BEA47D /* Build configuration list for PBXNativeTarget "QuizAppDynamox" */;
+			buildPhases = (
+				524A0962CA4B8911CB2E7F87 /* [CP] Check Pods Manifest.lock */,
+				ACA4B93A2E5D28F300BEA47D /* Sources */,
+				ACA4B93B2E5D28F300BEA47D /* Frameworks */,
+				ACA4B93C2E5D28F300BEA47D /* Resources */,
+				3120598350162D172C982F1E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				ACA4B9402E5D28F300BEA47D /* QuizAppDynamox */,
+			);
+			name = QuizAppDynamox;
+			productName = QuizAppDynamox;
+			productReference = ACA4B93E2E5D28F300BEA47D /* QuizAppDynamox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACA4B94A2E5D28F500BEA47D /* QuizAppDynamoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA4B9622E5D28F500BEA47D /* Build configuration list for PBXNativeTarget "QuizAppDynamoxTests" */;
+			buildPhases = (
+				3241AF4E7B962157EB0F3C72 /* [CP] Check Pods Manifest.lock */,
+				ACA4B9472E5D28F500BEA47D /* Sources */,
+				ACA4B9482E5D28F500BEA47D /* Frameworks */,
+				ACA4B9492E5D28F500BEA47D /* Resources */,
+				A43FFE82FECFE49960FF6747 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACA4B94D2E5D28F500BEA47D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				ACA4B94E2E5D28F500BEA47D /* QuizAppDynamoxTests */,
+			);
+			name = QuizAppDynamoxTests;
+			productName = QuizAppDynamoxTests;
+			productReference = ACA4B94B2E5D28F500BEA47D /* QuizAppDynamoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACA4B9542E5D28F500BEA47D /* QuizAppDynamoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA4B9652E5D28F500BEA47D /* Build configuration list for PBXNativeTarget "QuizAppDynamoxUITests" */;
+			buildPhases = (
+				C9DE467043809780D582080E /* [CP] Check Pods Manifest.lock */,
+				ACA4B9512E5D28F500BEA47D /* Sources */,
+				ACA4B9522E5D28F500BEA47D /* Frameworks */,
+				ACA4B9532E5D28F500BEA47D /* Resources */,
+				6F7BF462233E55E0D3F1B0AC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACA4B9572E5D28F500BEA47D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				ACA4B9582E5D28F500BEA47D /* QuizAppDynamoxUITests */,
+			);
+			name = QuizAppDynamoxUITests;
+			productName = QuizAppDynamoxUITests;
+			productReference = ACA4B9552E5D28F500BEA47D /* QuizAppDynamoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACA4B9362E5D28F300BEA47D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					ACA4B93D2E5D28F300BEA47D = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					ACA4B94A2E5D28F500BEA47D = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = ACA4B93D2E5D28F300BEA47D;
+					};
+					ACA4B9542E5D28F500BEA47D = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = ACA4B93D2E5D28F300BEA47D;
+					};
+				};
+			};
+			buildConfigurationList = ACA4B9392E5D28F300BEA47D /* Build configuration list for PBXProject "QuizAppDynamox" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACA4B9352E5D28F300BEA47D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = ACA4B93F2E5D28F300BEA47D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACA4B93D2E5D28F300BEA47D /* QuizAppDynamox */,
+				ACA4B94A2E5D28F500BEA47D /* QuizAppDynamoxTests */,
+				ACA4B9542E5D28F500BEA47D /* QuizAppDynamoxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACA4B93C2E5D28F300BEA47D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4B9492E5D28F500BEA47D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4B9532E5D28F500BEA47D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3120598350162D172C982F1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuizAppDynamox/Pods-QuizAppDynamox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuizAppDynamox/Pods-QuizAppDynamox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuizAppDynamox/Pods-QuizAppDynamox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3241AF4E7B962157EB0F3C72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuizAppDynamoxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		524A0962CA4B8911CB2E7F87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuizAppDynamox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F7BF462233E55E0D3F1B0AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuizAppDynamox-QuizAppDynamoxUITests/Pods-QuizAppDynamox-QuizAppDynamoxUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuizAppDynamox-QuizAppDynamoxUITests/Pods-QuizAppDynamox-QuizAppDynamoxUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuizAppDynamox-QuizAppDynamoxUITests/Pods-QuizAppDynamox-QuizAppDynamoxUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A43FFE82FECFE49960FF6747 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuizAppDynamoxTests/Pods-QuizAppDynamoxTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuizAppDynamoxTests/Pods-QuizAppDynamoxTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuizAppDynamoxTests/Pods-QuizAppDynamoxTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9DE467043809780D582080E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuizAppDynamox-QuizAppDynamoxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACA4B93A2E5D28F300BEA47D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4B9472E5D28F500BEA47D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4B9512E5D28F500BEA47D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACA4B94D2E5D28F500BEA47D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACA4B93D2E5D28F300BEA47D /* QuizAppDynamox */;
+			targetProxy = ACA4B94C2E5D28F500BEA47D /* PBXContainerItemProxy */;
+		};
+		ACA4B9572E5D28F500BEA47D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACA4B93D2E5D28F300BEA47D /* QuizAppDynamox */;
+			targetProxy = ACA4B9562E5D28F500BEA47D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ACA4B95D2E5D28F500BEA47D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACA4B95E2E5D28F500BEA47D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACA4B9602E5D28F500BEA47D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A35FC83A6E817A2A1520C7DF /* Pods-QuizAppDynamox.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiooliversud.QuizAppDynamox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACA4B9612E5D28F500BEA47D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B81E70A6B03CA14E5C5DD5BE /* Pods-QuizAppDynamox.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiooliversud.QuizAppDynamox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACA4B9632E5D28F500BEA47D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30B08403FE384224F92B29E7 /* Pods-QuizAppDynamoxTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiooliversud.QuizAppDynamoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuizAppDynamox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QuizAppDynamox";
+			};
+			name = Debug;
+		};
+		ACA4B9642E5D28F500BEA47D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E963B702852D18D064F1FDE /* Pods-QuizAppDynamoxTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiooliversud.QuizAppDynamoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuizAppDynamox.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QuizAppDynamox";
+			};
+			name = Release;
+		};
+		ACA4B9662E5D28F500BEA47D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5550C40200E43DC8426F5A9 /* Pods-QuizAppDynamox-QuizAppDynamoxUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiooliversud.QuizAppDynamoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuizAppDynamox;
+			};
+			name = Debug;
+		};
+		ACA4B9672E5D28F500BEA47D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91B18F968CCA4489317E828 /* Pods-QuizAppDynamox-QuizAppDynamoxUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiooliversud.QuizAppDynamoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuizAppDynamox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACA4B9392E5D28F300BEA47D /* Build configuration list for PBXProject "QuizAppDynamox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA4B95D2E5D28F500BEA47D /* Debug */,
+				ACA4B95E2E5D28F500BEA47D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA4B95F2E5D28F500BEA47D /* Build configuration list for PBXNativeTarget "QuizAppDynamox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA4B9602E5D28F500BEA47D /* Debug */,
+				ACA4B9612E5D28F500BEA47D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA4B9622E5D28F500BEA47D /* Build configuration list for PBXNativeTarget "QuizAppDynamoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA4B9632E5D28F500BEA47D /* Debug */,
+				ACA4B9642E5D28F500BEA47D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA4B9652E5D28F500BEA47D /* Build configuration list for PBXNativeTarget "QuizAppDynamoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA4B9662E5D28F500BEA47D /* Debug */,
+				ACA4B9672E5D28F500BEA47D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACA4B9362E5D28F300BEA47D /* Project object */;
+}
