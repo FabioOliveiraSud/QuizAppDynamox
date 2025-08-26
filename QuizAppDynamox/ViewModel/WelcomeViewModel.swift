@@ -30,7 +30,6 @@ class WelcomeViewModel: ObservableObject {
         isLoading = true
         errorMessage = nil
         
-        // Save player to database
         let player = Player(name: playerName)
         do {
             try persistenceService.savePlayer(player)

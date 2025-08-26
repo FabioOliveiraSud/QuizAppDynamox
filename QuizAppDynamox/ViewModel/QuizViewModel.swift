@@ -80,7 +80,6 @@ class QuizViewModel: ObservableObject {
                     self?.score += 1
                 }
                 
-                // Move to next question after a delay
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                     self?.currentQuestionIndex += 1
                     self?.loadNextQuestion()
@@ -90,7 +89,6 @@ class QuizViewModel: ObservableObject {
     }
     
     private func finishQuiz() {
-        // Save quiz result
         let result = QuizResult(
             playerId: player.id,
             playerName: player.name,
