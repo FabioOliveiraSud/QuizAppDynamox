@@ -21,12 +21,13 @@ struct QuizView: View {
             HStack {
                 Text("Questão \(viewModel.currentQuestionIndex + 1)/10")
                     .font(.headline)
+                    .foregroundStyle(.accent)
                 
                 Spacer()
                 
                 Text("Score: \(viewModel.score)")
                     .font(.headline)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.accent)
             }
             .padding()
             
@@ -57,5 +58,5 @@ struct QuizView: View {
     }
 }
 #Preview {
-    QuizView(player: Player(name: "Fabio" ) )
+    QuizView(player: Player(name: "Vanessa" ) )
 }

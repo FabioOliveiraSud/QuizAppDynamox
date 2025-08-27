@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct LoadingView: View {
+    @State private var isAnimating = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.black.opacity(0.3).edgesIgnoringSafeArea(.all) // Fundo semi-transparente
+            Circle()
+                .trim(from: 0, to: 0.7)
+                .stroke(Color.blue, lineWidth: 5)
+                .frame(width: 50, height: 50)
+                .rotationEffect(Angle(degrees: isAnimating ? 360 : 0))
+                .animation(Animation.linear(duration: 1).repeatForever(autoreverses: false), value: isAnimating)
+                .onAppear {
+                    isAnimating = true
+                }
+        }
     }
 }
 
-#Preview {
-    LoadingView()
+struct LoadingView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoadingView()
+    }
 }
+

@@ -28,15 +28,28 @@ class PersistenceService: PersistenceServiceProtocol {
         }
     }
     
+    func createAndSavePlayer(withName name: String) throws -> Player {
+            // Cria um novo player com ID único
+            let newPlayer = Player()
+            newPlayer.id = UUID().uuidString  // ou ObjectId() se usar Realm ObjectId
+            newPlayer.name = name
+            
+            // Salva no Realm
+            try savePlayer(newPlayer)
+            
+            return newPlayer
+        }
+    
+    func getPlayer(byId id: String) -> Player? {
+        return realm.object(ofType: Player.self, forPrimaryKey: id)
+    }
+    
     func savePlayer(_ player: Player) throws {
         try realm.write {
             realm.add(player, update: .modified)
         }
     }
     
-    func getPlayer(byId id: String) -> Player? {
-        return realm.object(ofType: Player.self, forPrimaryKey: id)
-    }
     
     func getAllPlayers() -> [Player] {
         return Array(realm.objects(Player.self))

@@ -13,20 +13,21 @@ struct WelcomeView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 30) {
-                Text("Dynamox Quiz")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(.accentColor)
                 
-                Image(systemName: "brain.head.profile")
+                Image("image")
                     .resizable()
                     .scaledToFit()
                     .frame(height: 120)
                     .foregroundColor(.accentColor)
                 
-                TextField("Enter your name", text: $viewModel.playerName)
+                Text("Quiz")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(.accentColor)
+                
+                TextField("Nome", text: $viewModel.playerName)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal, 40)
+                    .padding(.horizontal)
                 
                 if let errorMessage = viewModel.errorMessage {
                     Text(errorMessage)
@@ -45,17 +46,23 @@ struct WelcomeView: View {
                 }
                 .padding(.horizontal)
                 
-                Spacer()
-            }
-            .padding(.top, 80)
-            .navigationDestination(isPresented: $viewModel.navigateToQuiz) {
-                let player = PersistenceService().getPlayer(byId: viewModel.playerName)
-                    if let player {
-                        QuizView(player: player)
+                //.padding(.top, 80)
+                .navigationDestination(isPresented: $viewModel.navigateToQuiz) {
+                    let service = PersistenceService()
+                    let player: Player
+                    if let existingPlayer = service.getPlayer(byId: viewModel.playerName) {
+                        QuizView(player: existingPlayer)
                     } else {
-                        Text("Nenhum jogador encontrado para ID: \(viewModel.playerName)")
+                        // Cria e salva um novo player
+                        let player = try! service.createAndSavePlayer(withName: viewModel.playerName)
+                        QuizView(player: player)
                     }
+                }
+                
             }
+            
+
+
         }
     }
 }
