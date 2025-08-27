@@ -23,7 +23,7 @@ class WelcomeViewModel: ObservableObject {
     
     func startQuiz() {
         guard !playerName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
-            errorMessage = "Please enter your name to start the quiz"
+            errorMessage = "Por favor, coloque seu nome para iniciar o quiz"
             return
         }
         

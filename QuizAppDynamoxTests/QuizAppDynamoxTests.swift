@@ -6,6 +6,9 @@
 //
 
 import Testing
+import Quick
+import Nimble
+import Combine
 @testable import QuizAppDynamox
 
 struct QuizAppDynamoxTests {

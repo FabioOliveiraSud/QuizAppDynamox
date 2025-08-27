@@ -85,7 +85,15 @@ struct ResultsView: View {
                 }
                 
                 VStack(spacing: 15) {
-                    ButtonView(title: "Play Again", action: { dismiss() })
+                    Button(action: { dismiss() }) {
+                        Text("Jogar Novamente")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(.accent)
+                            .cornerRadius(10)
+                    }
+                    .padding(.horizontal)
                     
                     Button("Back to Home") {
                         dismiss()
@@ -100,5 +108,5 @@ struct ResultsView: View {
 }
 
 #Preview {
-    ResultsView()
+    ResultsView(playerId: "playerId", playerName: "playerName", score: 0, totalQuestions: 0)
 }

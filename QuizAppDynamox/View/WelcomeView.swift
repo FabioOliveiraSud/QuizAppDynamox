@@ -11,18 +11,18 @@ struct WelcomeView: View {
     @StateObject private var viewModel = WelcomeViewModel()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(spacing: 30) {
-                Text("Quiz Challenge")
+                Text("Dynamox Quiz")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.accentColor)
                 
                 Image(systemName: "brain.head.profile")
                     .resizable()
                     .scaledToFit()
                     .frame(height: 120)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.accentColor)
                 
                 TextField("Enter your name", text: $viewModel.playerName)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -35,18 +35,26 @@ struct WelcomeView: View {
                         .padding(.horizontal)
                 }
                 
-                ButtonView(title: "Start Quiz",
-                          isLoading: viewModel.isLoading,
-                          action: viewModel.startQuiz)
-                    .padding(.horizontal, 40)
+                Button(action: viewModel.startQuiz) {
+                    Text("Iniciar Quiz")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(.accent)
+                        .cornerRadius(10)
+                }
+                .padding(.horizontal)
                 
                 Spacer()
             }
             .padding(.top, 80)
             .navigationDestination(isPresented: $viewModel.navigateToQuiz) {
-                if let player = PersistenceService().getPlayer(byId: viewModel.playerName) {
-                    QuizView(player: player)
-                }
+                let player = PersistenceService().getPlayer(byId: viewModel.playerName)
+                    if let player {
+                        QuizView(player: player)
+                    } else {
+                        Text("Nenhum jogador encontrado para ID: \(viewModel.playerName)")
+                    }
             }
         }
     }

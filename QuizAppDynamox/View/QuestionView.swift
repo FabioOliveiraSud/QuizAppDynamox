@@ -31,8 +31,17 @@ struct QuestionView: View {
                 }
                 
                 if selectedAnswer != nil && isAnswerCorrect == nil {
-                    ButtonView(title: "Submit Answer", action: onSubmit)
-                        .padding(.top, 20)
+                    Button(action: onSubmit) {
+                        Text("Verificar Resposta")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(.accent)
+                            .cornerRadius(10)
+                    }
+                    .padding(.horizontal)
+                        
+                        
                 }
                 
                 if let isCorrect = isAnswerCorrect {
@@ -78,7 +87,7 @@ struct AnswerOptionView: View {
                     .stroke(borderColor, lineWidth: 2)
             )
         }
-        .disabled(isCorrect != nil) // Disable after submission
+        .disabled(isCorrect != nil)
     }
     
     private var borderColor: Color {
@@ -94,5 +103,6 @@ struct AnswerOptionView: View {
 }
 
 #Preview {
-    QuestionView()
+    QuestionView(question: Question(id: "1", statement: "Qual é a melhor empresa de tecnologia do mundo?", options:
+                                        ["Google,Microsoft, Apple, Dynamox"]), selectedAnswer: .constant(nil), isAnswerCorrect: nil, onSubmit: {} )
 }

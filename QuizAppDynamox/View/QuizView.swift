@@ -19,7 +19,7 @@ struct QuizView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Question \(viewModel.currentQuestionIndex + 1)/10")
+                Text("Questão \(viewModel.currentQuestionIndex + 1)/10")
                     .font(.headline)
                 
                 Spacer()
@@ -30,11 +30,10 @@ struct QuizView: View {
             }
             .padding()
             
-            // Question content
             if viewModel.isLoading {
                 LoadingView()
             } else if let errorMessage = viewModel.errorMessage {
-                ErrorView
+                ErrorView()
             } else if let question = viewModel.currentQuestion {
                 QuestionView(
                     question: question,
@@ -58,5 +57,5 @@ struct QuizView: View {
     }
 }
 #Preview {
-    QuizView(player: Player)
+    QuizView(player: Player(name: "Fabio" ) )
 }

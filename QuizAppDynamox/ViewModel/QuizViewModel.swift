@@ -51,7 +51,7 @@ class QuizViewModel: ObservableObject {
             .sink { [weak self] completion in
                 self?.isLoading = false
                 if case .failure(let error) = completion {
-                    self?.errorMessage = "Failed to load question: \(error.localizedDescription)"
+                    self?.errorMessage = "Falha ao carregar pergunta: \(error.localizedDescription)"
                 }
             } receiveValue: { [weak self] question in
                 self?.isLoading = false
@@ -70,7 +70,7 @@ class QuizViewModel: ObservableObject {
             .sink { [weak self] completion in
                 self?.isLoading = false
                 if case .failure(let error) = completion {
-                    self?.errorMessage = "Failed to submit answer: \(error.localizedDescription)"
+                    self?.errorMessage = "Falha ao verificar resposta: \(error.localizedDescription)"
                 }
             } receiveValue: { [weak self] isCorrect in
                 self?.isLoading = false
@@ -100,7 +100,7 @@ class QuizViewModel: ObservableObject {
             try persistenceService.saveQuizResult(result)
             showResult = true
         } catch {
-            errorMessage = "Failed to save quiz result"
+            errorMessage = "Falha ao salvar o resultado do quiz"
         }
     }
     

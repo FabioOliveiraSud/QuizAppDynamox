@@ -7,12 +7,15 @@
 
 import SwiftUI
 
-struct CustomButton: View {
+struct ButtonView: View {
+    var title: String
+    var action: () -> Void
+    
     var body: some View {
         Button(action: {
             print("Botão pressionado!")
         }) {
-            Text("Clique Aqui")
+            Text("")
                 .font(.headline)
                 .foregroundColor(.white)
                 .padding()
@@ -25,8 +28,6 @@ struct CustomButton: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ButtonView(title: "", action: { })
 }
