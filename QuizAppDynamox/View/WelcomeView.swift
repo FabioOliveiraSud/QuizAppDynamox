@@ -46,22 +46,18 @@ struct WelcomeView: View {
                 }
                 .padding(.horizontal)
                 
-                //.padding(.top, 80)
                 .navigationDestination(isPresented: $viewModel.navigateToQuiz) {
                     let service = PersistenceService()
                     let player: Player
                     if let existingPlayer = service.getPlayer(byId: viewModel.playerName) {
                         QuizView(player: existingPlayer)
                     } else {
-                        // Cria e salva um novo player
                         let player = try! service.createAndSavePlayer(withName: viewModel.playerName)
                         QuizView(player: player)
                     }
                 }
                 
             }
-            
-
 
         }
     }

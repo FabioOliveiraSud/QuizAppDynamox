@@ -20,6 +20,7 @@ struct QuestionView: View {
                     .font(.title2)
                     .fontWeight(.semibold)
                     .padding(.bottom, 10)
+                    .foregroundStyle(.accent)
                 
                 ForEach(question.options, id: \.self) { option in
                     AnswerOptionView(
@@ -72,7 +73,7 @@ struct AnswerOptionView: View {
         Button(action: onSelect) {
             HStack {
                 Text(option)
-                    .foregroundColor(.white)
+                    .foregroundColor(.primary)
                 
                 Spacer()
                 
@@ -85,7 +86,7 @@ struct AnswerOptionView: View {
             .background(
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(borderColor, lineWidth: 2)
-                    .background(Color.accentColor.opacity(1.0))
+                    //.background(Color.gray)
             )
         }
         .disabled(isCorrect != nil)
@@ -105,8 +106,8 @@ struct AnswerOptionView: View {
 
 #Preview {
     QuestionView(question: Question(id: "1",
-                                    statement: "Qual é a melhor empresa de tecnologia do mundo?",
-                                    options: ["Google,Microsoft, Apple, Dynamox"]),
+                                    statement: "Qual é a melhor empresa do mundo?",
+                                    options: ["Google","Microsoft","Apple", "Dynamox"]),
                                     selectedAnswer: .constant(nil),
                                     isAnswerCorrect: nil, onSubmit: {} )
 }

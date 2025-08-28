@@ -12,7 +12,7 @@ struct LoadingView: View {
 
     var body: some View {
         ZStack {
-            Color.black.opacity(0.3).edgesIgnoringSafeArea(.all) // Fundo semi-transparente
+            Color.white.edgesIgnoringSafeArea(.all)
             Circle()
                 .trim(from: 0, to: 0.7)
                 .stroke(Color.blue, lineWidth: 5)

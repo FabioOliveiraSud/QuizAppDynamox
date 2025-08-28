@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct ResultsView: View {
-    @StateObject private var viewModel: ResultsViewModel
-    @Environment(\.dismiss) private var dismiss
+    @StateObject var viewModel: ResultsViewModel
     
     init(playerId: String, playerName: String, score: Int, totalQuestions: Int) {
         _viewModel = StateObject(wrappedValue: ResultsViewModel(
@@ -24,92 +23,106 @@ struct ResultsView: View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 30) {
-                    VStack(spacing: 15) {
-                        Text("Quiz Completo!")
-                            .font(.title)
-                            .fontWeight(.bold)
-                        
-                        Text("\(viewModel.playerName)")
-                            .font(.title2)
-                        
-                        ZStack {
-                            Circle()
-                                .stroke(Color.gray.opacity(0.3), lineWidth: 10)
-                                .frame(width: 150, height: 150)
-                            
-                            Circle()
-                                .trim(from: 0, to: CGFloat(viewModel.score) / CGFloat(viewModel.totalQuestions))
-                                .stroke(Color.blue, lineWidth: 10)
-                                .frame(width: 150, height: 150)
-                                .rotationEffect(.degrees(-90))
-                            
-                            VStack {
-                                Text("\(viewModel.score)")
-                                    .font(.system(size: 40, weight: .bold))
-                                
-                                Text("/ \(viewModel.totalQuestions)")
-                                    .font(.title3)
-                            }
-                        }
-                        
-                        Text("Você acertou \(viewModel.score) de \(viewModel.totalQuestions)")
-                            .font(.headline)
-                    }
-                    .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 15)
-                            .stroke(Color.blue, lineWidth: 2)
-                    )
-                    .padding()
+                    summarySection
                     
                     if !viewModel.previousResults.isEmpty {
-                        VStack(alignment: .leading, spacing: 15) {
-                            Text("Previous Results")
-                                .font(.headline)
-                            
-                            ForEach(viewModel.previousResults.prefix(3)) { result in
-                                HStack {
-                                    Text("\(result.score)/\(result.totalQuestions)")
-                                        .fontWeight(.bold)
-                                    
-                                    Spacer()
-                                    
-                                    Text(result.date, style: .date)
-                                        .foregroundColor(.secondary)
-                                }
-                                .padding()
-                                .background(Color.gray.opacity(0.1))
-                                .cornerRadius(8)
-                            }
-                        }
-                        .padding(.horizontal)
+                        previousResultsSection
                     }
                     
-                    VStack(spacing: 15) {
-                        Button(action: { dismiss() }) {
-                            Text("Jogar Novamente")
-                                .frame(maxWidth: .infinity)
-                                .padding()
-                                .foregroundColor(.white)
-                                .background(.accent)
-                                .cornerRadius(10)
-                        }
-                        .padding(.horizontal)
-                        
-                        Button("Back to Home") {
-                            dismiss()
-                        }
-                        .foregroundColor(.blue)
-                    }
-                    .padding()
+                    playAgainButton
                 }
+                .padding()
             }
-            .navigationBarBackButtonHidden(true)
         }
     }
+    
+    private var summarySection: some View {
+        VStack(spacing: 15) {
+            Text("Quiz Completo!")
+                .font(.title)
+                .fontWeight(.bold)
+            
+            Text(viewModel.playerName)
+                .font(.title2)
+            
+            scoreCircle
+            
+            Text("Você acertou \(viewModel.score) de \(viewModel.totalQuestions)")
+                .font(.headline)
         }
-       
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 15)
+                .stroke(Color.accentColor, lineWidth: 2)
+        )
+        .padding(.horizontal)
+    }
+    
+    private var scoreCircle: some View {
+        ZStack {
+            Circle()
+                .stroke(Color.gray.opacity(0.3), lineWidth: 10)
+            
+            Circle()
+                .trim(from: 0, to: CGFloat(viewModel.score) / CGFloat(viewModel.totalQuestions))
+                .stroke(Color.accentColor, lineWidth: 10)
+                .rotationEffect(.degrees(-90))
+            
+            VStack {
+                Text("\(viewModel.score)")
+                    .font(.system(size: 40, weight: .bold))
+                
+                Text("/ \(viewModel.totalQuestions)")
+                    .font(.title3)
+            }
+        }
+        .frame(width: 150, height: 150)
+    }
+    
+    private var previousResultsSection: some View {
+        VStack(alignment: .leading, spacing: 15) {
+            Text("Previous Results")
+                .font(.headline)
+            
+            ForEach(viewModel.previousResults.prefix(3)) { result in
+                HStack {
+                    Text("\(result.score)/\(result.totalQuestions)")
+                        .fontWeight(.bold)
+                    
+                    Spacer()
+                    
+                    Text(result.date, style: .date)
+                        .foregroundColor(.secondary)
+                }
+                .padding()
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(8)
+            }
+        }
+        .padding(.horizontal)
+    }
+    
+    private var playAgainButton: some View {
+        NavigationLink(destination: QuizView(
+            player: Player(name: viewModel.playerName)
+        )) {
+            Text("Jogar Novamente")
+                .frame(maxWidth: .infinity)
+                .padding()
+                .foregroundColor(.white)
+                .background(.accent)
+                .cornerRadius(10)
+        }
+        .padding(.horizontal)
+    }
+
+}
 
 #Preview {
-    ResultsView(playerId: "playerId", playerName: "", score: 0, totalQuestions: 0)
+    ResultsView(
+        playerId: "playerId",
+        playerName: "Exemplo",
+        score: 7,
+        totalQuestions: 10
+    )
 }

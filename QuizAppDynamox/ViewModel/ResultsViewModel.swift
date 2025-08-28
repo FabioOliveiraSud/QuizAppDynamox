@@ -12,6 +12,8 @@ class ResultsViewModel: ObservableObject {
     @Published var playerName: String
     @Published var score: Int
     @Published var totalQuestions: Int
+    @Published var isLoading = false
+    @Published var errorMessage: String?
     @Published var previousResults: [QuizResult] = []
     
     private let playerId: String

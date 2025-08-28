@@ -11,9 +11,11 @@ struct QuizView: View {
     let player: Player
     @StateObject private var viewModel: QuizViewModel
     
+    
     init(player: Player) {
         self.player = player
         _viewModel = StateObject(wrappedValue: QuizViewModel(player: player))
+        
     }
     
     var body: some View {
@@ -27,14 +29,14 @@ struct QuizView: View {
                 
                 Text("Score: \(viewModel.score)")
                     .font(.headline)
-                    .foregroundColor(.accent)
+                    .foregroundColor(.colorButton)
             }
             .padding()
             
             if viewModel.isLoading {
                 LoadingView()
             } else if let errorMessage = viewModel.errorMessage {
-                ErrorView()
+                ErrorView(title: "Algo deu errado", message: "Erro ao carregar as perguntas")
             } else if let question = viewModel.currentQuestion {
                 QuestionView(
                     question: question,
@@ -57,6 +59,8 @@ struct QuizView: View {
         }
     }
 }
+
 #Preview {
-    QuizView(player: Player(name: "Vanessa" ) )
+    QuizView(player: Player(name: "Vanessa"))
 }
+
